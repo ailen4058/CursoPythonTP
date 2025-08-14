@@ -26,6 +26,7 @@ def guardar_datos(datos):
 def inicio():
     pass
 
+# Consigna 2:
 # Crea un endpoint GET /api/vuelos que:
 # 1. Cargue todos los datos usando cargar_datos()
 # 2. Retorne los datos en formato JSON usando jsonify()
@@ -33,6 +34,7 @@ def inicio():
 def listar_vuelos():
     pass
 
+# Consigna 3:
 # Crea un endpoint GET /api/vuelos/<int:vuelo_id> que:
 # 1. Cargue todos los datos
 # 2. Busque el vuelo con el ID especificado
@@ -42,6 +44,7 @@ def listar_vuelos():
 def obtener_vuelo(vuelo_id):
     pass
 
+# Consigna 4:
 # Crea un endpoint POST /api/vuelos que:
 # 1. Obtenga los datos JSON de la petición con request.get_json()
 # 2. Valide que el campo "destino" esté presente y no esté vacío
@@ -56,6 +59,7 @@ def obtener_vuelo(vuelo_id):
 def agregar_vuelo():
     pass
 
+# Consigna 5:
 # Crea un endpoint PUT /api/vuelos/<int:vuelo_id> que:
 # 1. Obtenga los datos JSON de la petición
 # 2. Cargue todos los datos existentes
@@ -67,6 +71,7 @@ def agregar_vuelo():
 def actualizar_vuelo(vuelo_id):
     pass
 
+# Consigna 6:
 # Crea un endpoint DELETE /api/vuelos/<int:vuelo_id> que:
 # 1. Cargue todos los datos
 # 2. Filtre los datos excluyendo el vuelo con el ID especificado (usa list comprehension)

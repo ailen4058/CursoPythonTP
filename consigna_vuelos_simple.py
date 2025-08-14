@@ -18,6 +18,8 @@ def guardar_datos(datos):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(datos, f, indent=4, ensure_ascii=False)
 
+    
+# Consigna 1:
 # Crea un endpoint de inicio GET / que retorne:
 # {"mensaje": "API de Vuelos"} en formato JSON
 @app.route("/", methods=["GET"])

@@ -1,3 +1,6 @@
+# Recordá que debes correr la aplicación en la terminal con el siguiente comando:
+# flask --app app run
+
 from flask import Flask, jsonify, request
 import json
 import os
@@ -107,15 +110,11 @@ def eliminar_vuelo(vuelo_id):
 #   - Si el vuelo está completo (vendidos >= capacidad), devuelva {"error": "Vuelo completo"} con código 400.
 # 6. Guarde los datos actualizados.
 # 7. Devuelva el vuelo actualizado en formato JSON.
-@app.route("/vender", methods=["POST"])
+@app.route("/api/vender", methods=["POST"])
 def vender_vuelo():
     pass
 
 if __name__ == "__main__":
-    # Al ejecutar el archivo:
-    # 1. Verifica si existe el archivo de datos
-    # 2. Si no existe, crea uno vacío usando guardar_datos([])
-    # 3. Ejecuta la aplicación en modo debug
     if not os.path.exists(DATA_FILE):
         guardar_datos([])
     app.run(debug=True)
